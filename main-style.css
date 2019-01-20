@@ -1,4 +1,30 @@
 .nav-item {
     padding-left: 30px;
 }
-
+.container-fluid {
+    padding: 0;
+    box-sizing: border-box;
+}
+#banner-1 {
+    background-image:
+            linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)),
+            url(res/GCI.png);
+    height: 480px;
+    width: 100%;
+    background-size: cover;
+}
+#banner-2 {
+    background-image:
+            linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)),
+            url(res/YMC.jpg);
+    height: 480px;
+    width: 100%;
+    background-size: cover;
+}
+#banner-3 {
+    background-image:
+            linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.2)),
+            url(res/KDC.png);
+    height: 480px;
+    background-size: cover;
+}
