@@ -1,6 +1,6 @@
-var banner1 = document.getElementById("banner-1");
+const banner1 = document.getElementById("banner-1");
 
-window.onload = function () {
+window.onLoad = function () {
     if (screen.width < 1300) {
         banner1.style.backgroundPosition = "left";
     } else {
