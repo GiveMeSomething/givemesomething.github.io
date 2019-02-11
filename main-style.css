@@ -9,7 +9,7 @@
 
 #banner-1 {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
-    url(res/GCI.png);
+    url(res/banner/GCI.png);
     width: 100%;
     height: auto;
     min-height: 480px;
@@ -18,7 +18,7 @@
 
 #banner-2 {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
-    url(res/YMC.jpeg);
+    url(res/banner/YMC.jpeg);
     width: 100%;
     height: auto;
     min-height: 480px;
@@ -28,7 +28,7 @@
 
 #banner-3 {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
-    url(res/KDC.png);
+    url(res/banner/KDC.png);
     width: 100%;
     height: auto;
     min-height: 480px;
