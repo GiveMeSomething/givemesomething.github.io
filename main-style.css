@@ -35,3 +35,13 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+#banner-4 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+    url(res/banner/Volunteer-Banner.jpg);
+    width: 100%;
+    height: auto;
+    min-height: 480px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
