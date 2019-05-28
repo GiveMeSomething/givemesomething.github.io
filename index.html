@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -22,22 +22,27 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" id="toIntro" href="#">
                     <p style="font-size: 20px" class="align-middle">Giới thiệu</p>
                     <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" id="toActivity" href="#">
                     <p style="font-size: 20px; vertical-align: middle">Hoạt động</p>
                     <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" id="toProject" href="#">
                     <p style="font-size: 20px; vertical-align: middle">Dự án</p>
                     <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">
+                <a class="nav-link" id="toAchievement" href="#">
+                    <p style="font-size: 20px; vertical-align: middle">Thành tích</p>
+                    <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" id="toContact" href="#">
                     <p style="font-size: 20px">Liên hệ</p>
                     <span class="sr-only">(current)</span></a>
             </li>
@@ -100,7 +105,6 @@
                 <h2>GIỚI THIỆU BẢN THÂN</h2>
                 <p class="lead">Tôi là Hoàng Tiến Minh, hiện đang học tại lớp 12A3, trường THPT Nhân Chính. Tôi
                     là một lập trình viên phát triển phần mềm và đồng thời cũng là một người phát triển game.</p>
-                <a href="#" class="btn btn-info btn-lg disabled" role="button" aria-disabled="true">Xem thêm</a>
             </div>
             <div class="col-md-4 offset-2 d-none d-sm-block text-center">
                 <img src="res/Profile-Portrait.jpg" height="400"/>
@@ -109,7 +113,7 @@
     </div>
 </div>
 <!-- Cac hoat dong chinh -->
-<div class="container-fluid">
+<div class="container-fluid" id="activity">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -133,8 +137,10 @@
                             <p class="lead">Cuộc thi Google Code-in được tổ chức vào năm 2016, dành cho học
                                 sinh từ 13 đến 18 tuổi.
                                 Đó cũng chính là dấu mốc đầu tiên cho niềm đam mê với lập trình của tôi</p>
-                            <a href="#" class="btn btn-primary btn-lg" role="button"
-                               aria-disabled="true">Xem thêm</a>
+                            <a href="https://codein.withgoogle.com/archive/"
+                               class="btn btn-primary btn-lg"
+                               role="button"
+                               aria-disabled="false">Xem thêm</a>
                         </div>
                     </div>
                 </div>
@@ -148,7 +154,9 @@
                                 Maker Vietnam và Intel.
                                 Đây là bước ngoặt lớn khi tôi được bắt đầu được tiếp cận những điều mới mẻ, nhất
                                 là lập trình phần cứng.</p>
-                            <a href="#" class="btn btn-primary btn-lg" role="button"
+                            <a href="https://www.facebook.com/notes/young-makers-vietnam/th%E1%BB%AD-th%C3%A1ch-s%C3%A1ng-t%E1%BA%A1o-tr%E1%BA%BB-2017-th%E1%BB%83-l%E1%BB%87-cu%E1%BB%99c-thi/647289132122086/"
+                               class="btn btn-primary btn-lg"
+                               role="button"
                                aria-disabled="true">Xem thêm</a>
                         </div>
                     </div>
@@ -162,7 +170,9 @@
                             <p class="lead">Tại Học viện Kiddicode - học viện công nghệ dành cho trẻ em, tôi học được
                                 nhiều kiến thức và kĩ năng mới
                                 từ đó tôi đã phát triển được bản thân trên nhiều phương diện.</p>
-                            <a href="#" class="btn btn-primary btn-lg" role="button"
+                            <a href="https://kiddicode.org/about-us.html"
+                               class="btn btn-primary btn-lg"
+                               role="button"
                                aria-disabled="true">Xem thêm</a>
                         </div>
                     </div>
@@ -176,8 +186,6 @@
                             <p class="lead">Với việc tham gia vào hoạt động phát cháo tình nguyện tại các bệnh viện
                                 trong khu vực, tôi đã có được những cái nhìn khác về cuộc sống và
                                 có thêm được những kinh nghiệm vô cùng quý giá.</p>
-                            <a href="#" class="btn btn-primary btn-lg" role="button"
-                               aria-disabled="true">Xem thêm</a>
                         </div>
                     </div>
                 </div>
@@ -191,7 +199,10 @@
                 <h2>Google Code-in</h2>
                 <p class="lead">Cuộc thi Google Code-in được tổ chức vào năm 2016, dành cho học sinh từ 13 đến 18 tuổi.
                     Đó cũng chính là sự kiện đánh dấu mốc cho niềm đam mê lập trình của tôi.</p>
-                <a href="#" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Xem thêm</a>
+                <a href="https://codein.withgoogle.com/archive/"
+                   class="btn btn-primary btn-lg"
+                   role="button"
+                   aria-disabled="true">Xem thêm</a>
             </div>
         </div>
         <div class="row">
@@ -204,7 +215,10 @@
                     Đây là bước ngoặt lớn của tôi khi bắt đầu được tiếp cận những điều mới mẻ, đặc biệt là lập trình
                     phần
                     cứng.</p>
-                <a href="#" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Xem thêm</a>
+                <a href="https://www.facebook.com/notes/young-makers-vietnam/th%E1%BB%AD-th%C3%A1ch-s%C3%A1ng-t%E1%BA%A1o-tr%E1%BA%BB-2017-th%E1%BB%83-l%E1%BB%87-cu%E1%BB%99c-thi/647289132122086/"
+                   class="btn btn-primary btn-lg"
+                   role="button"
+                   aria-disabled="true">Xem thêm</a>
             </div>
         </div>
         <div class="row">
@@ -213,7 +227,10 @@
                 <h2>Trợ giảng tại Kiddicode</h2>
                 <p class="lead">Tại học viện Kiddicode, tôi không chỉ được củng cố thêm kiến thức mà còn được tự phát
                     triển bản thân và những kĩ năng mềm của mình.</p>
-                <a href="#" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Xem thêm</a>
+                <a href="https://kiddicode.org/about-us.html"
+                   class="btn btn-primary btn-lg"
+                   role="button"
+                   aria-disabled="true">Xem thêm</a>
             </div>
         </div>
         <div class="row">
@@ -223,13 +240,12 @@
                 <p class="lead">Việc tham gia vào hoạt động phát cháo tình nguyện, tôi đã có được những cái nhìn khác về
                     cuộc sống và
                     có thêm được những kinh nghiệm vô cùng quý giá.</p>
-                <a href="#" class="btn btn-primary btn-lg" role="button" aria-disabled="true">Xem thêm</a>
             </div>
         </div>
     </div>
 </div>
 <!-- Cac du an -->
-<div class="container pt-5">
+<div class="container pt-5" id="project">
     <div class="row text-center pt-5">
         <div class="col-12">
             <h1>CÁC DỰ ÁN</h1>
@@ -252,7 +268,8 @@
                             nên
                             đơn giản và ngăn nắp hơn.
                         </p>
-                        <a href="#" class="btn btn-primary">Xem thêm</a>
+                        <a href="https://github.com/GiveMeSomething/NoteForLife_0.0"
+                           class="btn btn-primary">Xem thêm</a>
                     </div>
                 </div>
             </div>
@@ -266,7 +283,8 @@
                         <p class="card-text">
                             Là dự án sử dụng trí tuệ nhân tạo để điểu khiển các thiết bị trong nhà bằng giọng nói.
                         </p>
-                        <a href="#" class="btn btn-primary">Xem thêm</a>
+                        <a href="https://github.com/GiveMeSomething/rim"
+                           class="btn btn-primary">Xem thêm</a>
                     </div>
                 </div>
             </div>
@@ -289,7 +307,8 @@
                             thể
                             vượt qua cạm bẫy và những mê cung phức tạp.
                         </p>
-                        <a href="#" class="btn btn-primary">Xem thêm</a>
+                        <a href="https://drive.google.com/open?id=0B7GKrZNwjYpYcUJBMEhjRXNNS0U"
+                           class="btn btn-primary">Xem thêm</a>
                     </div>
                 </div>
             </div>
@@ -304,7 +323,8 @@
                             Đây là sản phẩm game giúp mọi người giải trí, đồng thời cũng giúp nâng cao hiểu biết
                             về phòng cháy chữa cháy và các cách xử trí khi xảy ra đám cháy.
                         </p>
-                        <a href="#" class="btn btn-primary">Xem thêm</a>
+                        <a href="https://github.com/GiveMeSomething/Fire-Game-1.0.0"
+                           class="btn btn-primary">Xem thêm</a>
                     </div>
                 </div>
             </div>
@@ -327,7 +347,8 @@
                             lập trình
                             và cách làm việc tại hệ thống Codegym.
                         </p>
-                        <a href="#" class="btn btn-primary">Xem thêm</a>
+                        <a href="https://github.com/GiveMeSomething/big-project"
+                           class="btn btn-primary">Xem thêm</a>
                     </div>
                 </div>
             </div>
@@ -342,7 +363,8 @@
                             Là một trang web giởi thiệu bản thân, giúp tôi có thể kết nối với mọi người và thế giới
                             mạng một cách thuận tiện hơn.
                         </p>
-                        <a href="#" class="btn btn-primary">Xem thêm</a>
+                        <a href="#"
+                           class="btn btn-primary">Xem thêm</a>
                     </div>
                 </div>
             </div>
@@ -360,12 +382,12 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
+                <div class="col-8 offset-2 text-center">
                     <div class="embed-responsive embed-responsive-4by3">
                         <iframe class="embed-responsive-item"
                                 src="https://scratch.mit.edu/projects/embed/73152352/"
                                 allowfullscreen
-                                style="overflow: hidden"
+                                style="overflow: hidden; height: 540px; width: 720px"
                                 scrolling="no">
                         </iframe>
                     </div>
@@ -394,8 +416,8 @@
     </div>
 </div>
 <!-- Cac thanh tich -->
-<div class="container pt-5">
-    <div class="row text-center" style="padding-top: 10vh">
+<div class="container pt-5" id="achievement">
+    <div class="row text-center" style="padding-top: 5vh">
         <div class="col-12">
             <h1>CÁC THÀNH TÍCH</h1>
         </div>
@@ -471,7 +493,7 @@
     </div>
 </div>
 <!-- Footer-->
-<div class="container pt-5">
+<div class="container pt-5" id="contact">
     <div class="row d-none d-sm-block">
         <div class="row">
             <div class="col-12">
@@ -570,5 +592,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+<script src="control.js"></script>
 </body>
 </html>
