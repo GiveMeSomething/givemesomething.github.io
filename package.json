@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-2023",
+  "version": "1.0.0",
+  "description": "GiveMeSomething Portfolio Project 2023",
+  "scripts": {
+    "start": "yarn tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/output.css --watch"
+  },
+  "author": "Minh Hoang Tien",
+  "license": "ISC",
+  "packageManager": "yarn@1.22.19",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

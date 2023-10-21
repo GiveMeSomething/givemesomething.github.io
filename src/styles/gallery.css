@@ -1,0 +1,74 @@
+.img-container {
+  display: absolute;
+  width: 25%;
+  height: 25%;
+}
+
+.moving-bot-to-top > div {
+  animation-name: moving-bot-to-top;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.moving-top-to-bot > div {
+  animation-name: moving-top-to-bot;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.delay-child-1 > div {
+  animation-delay: 800ms;
+}
+
+.delay-child-2 > div {
+  animation-delay: 1200ms;
+}
+
+@keyframes moving-bot-to-top {
+  0% {
+    transform: translateY(0%);
+  }
+
+  60% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(-610%);
+  }
+}
+
+@keyframes moving-top-to-bot {
+  0% {
+    transform: translateY(0%);
+  }
+
+  60% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(610%);
+  }
+}
+
+.anim-delay-100 {
+  animation-delay: 200ms;
+}
+
+.anim-delay-200 {
+  animation-delay: 300ms;
+}
+
+.anim-delay-300 {
+  animation-delay: 400ms;
+}
+
+.anim-delay-400 {
+  animation-delay: 500ms;
+}
+
+#center-img {
+  transform: scale(5, 4);
+  transition: transform 2s ease 5s;
+}

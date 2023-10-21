@@ -1,0 +1,57 @@
+.center-image {
+  opacity: 0;
+  animation: zoom-center-image 1s ease 4.5s forwards;
+  background-color: black;
+}
+
+.center-title {
+  opacity: 0;
+  animation: title-appear 1s steps(60, end) 4.5s forwards;
+}
+
+.center-intro {
+  top: 150%;
+  animation: popup 1s ease 5s forwards;
+}
+
+@keyframes zoom-center-image {
+  0% {
+    opacity: 1;
+    transform: scale(1, 1);
+    filter: blur(0.25rem);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(6, 5);
+    filter: blur(0.5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(6, 5);
+    filter: blur(0);
+  }
+}
+
+@keyframes popup {
+  0% {
+    top: 150%;
+  }
+
+  100% {
+    top: 20%;
+  }
+}
+
+@keyframes title-appear {
+  0% {
+    opacity: 0;
+    filter: blur(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
