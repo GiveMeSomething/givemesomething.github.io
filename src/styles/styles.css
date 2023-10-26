@@ -14,7 +14,7 @@
   animation: popup 1s ease 5s forwards;
 }
 
-@keyframes zoom-center-image {
+/* @keyframes zoom-center-image {
   0% {
     opacity: 1;
     transform: scale(1, 1);
@@ -32,9 +32,9 @@
     transform: scale(6, 5);
     filter: blur(0);
   }
-}
+} */
 
-@keyframes popup {
+/* @keyframes popup {
   0% {
     top: 150%;
   }
@@ -42,7 +42,7 @@
   100% {
     top: 20%;
   }
-}
+} */
 
 @keyframes title-appear {
   0% {

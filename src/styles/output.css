@@ -534,6 +534,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -618,22 +652,6 @@ video {
   top: 0px;
 }
 
-.-bottom-\[100\%\] {
-  bottom: -100%;
-}
-
-.top-55\% {
-  top: 55%;
-}
-
-.top-145\% {
-  top: 145%;
-}
-
-.top-25\% {
-  top: 25%;
-}
-
 .m-0 {
   margin: 0px;
 }
@@ -702,10 +720,6 @@ video {
 
 .p-16 {
   padding: 4rem;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .text-4xl {

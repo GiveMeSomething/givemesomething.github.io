@@ -4,24 +4,32 @@
   height: 25%;
 }
 
-.moving-bot-to-top > div {
-  animation-name: moving-bot-to-top;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
+.moving-bot-to-top > div:nth-child(1),
+.moving-bot-to-top > div:nth-child(3),
+.moving-bot-to-top > div:nth-child(5) {
+  animation: moving-bot-to-top 2s ease-out forwards;
+  /* moving-left-to-right 2s ease-in 2.3s forwards; */
 }
 
-.moving-top-to-bot > div {
-  animation-name: moving-top-to-bot;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
+.moving-bot-to-top > div:nth-child(2),
+.moving-bot-to-top > div:nth-child(4),
+.moving-bot-to-top > div:nth-child(6) {
+  animation: moving-bot-to-top 2s ease-out forwards;
+  /* moving-right-to-left 2s ease-in 2.3s forwards; */
 }
 
-.delay-child-1 > div {
-  animation-delay: 800ms;
+.moving-top-to-bot > div:nth-child(1),
+.moving-top-to-bot > div:nth-child(3),
+.moving-top-to-bot > div:nth-child(5) {
+  animation: moving-top-to-bot 2s ease-out forwards;
+  /* moving-left-to-right 2s ease-in 2.3s forwards; */
 }
 
-.delay-child-2 > div {
-  animation-delay: 1200ms;
+.moving-top-to-bot > div:nth-child(2),
+.moving-top-to-bot > div:nth-child(4),
+.moving-top-to-bot > div:nth-child(6) {
+  animation: moving-top-to-bot 2s ease-out forwards;
+  /* moving-right-to-left 2s ease-in 2.3s forwards; */
 }
 
 @keyframes moving-bot-to-top {
@@ -30,11 +38,25 @@
   }
 
   60% {
-    transform: translateY(-100%);
+    transform: translateY(-50%);
   }
 
   100% {
     transform: translateY(-610%);
+  }
+}
+
+@keyframes moving-bot-to-top-slow {
+  0% {
+    transform: translateY(0%);
+  }
+
+  60% {
+    transform: translateY(50%);
+  }
+
+  100% {
+    transform: translateY(610%);
   }
 }
 
@@ -52,20 +74,34 @@
   }
 }
 
-.anim-delay-100 {
-  animation-delay: 200ms;
+@keyframes moving-top-to-bot-slow {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(10%);
+  }
 }
 
-.anim-delay-200 {
-  animation-delay: 300ms;
+@keyframes moving-right-to-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-60%);
+  }
 }
 
-.anim-delay-300 {
-  animation-delay: 400ms;
-}
+@keyframes moving-left-to-right {
+  0% {
+    transform: translateX(0%);
+  }
 
-.anim-delay-400 {
-  animation-delay: 500ms;
+  100% {
+    transform: translateX(60%);
+  }
 }
 
 #center-img {
