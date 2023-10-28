@@ -13,6 +13,8 @@ const STACK_STEP = 22;
 const IMAGE_START = 25;
 const IMAGE_STEP = 30;
 
+const stackDelay = [0.5, 0.3, 0, 0.3, 0.5];
+
 function renderImageStack() {
   const root = document.getElementById("img-stack-root");
 
@@ -50,6 +52,10 @@ function renderImageStackContainer(index, direction = "bot-to-top") {
 
   for (let i = 0; i < 6; i++) {
     const image = renderImage(i, direction);
+    image.childNodes[0].style.setProperty(
+      "animation-delay",
+      `${stackDelay[index]}s`,
+    );
     div.appendChild(image);
   }
 
