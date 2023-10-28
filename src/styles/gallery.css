@@ -37,7 +37,7 @@
     transform: translateY(0%);
   }
 
-  60% {
+  50% {
     transform: translateY(-50%);
   }
 
@@ -46,26 +46,12 @@
   }
 }
 
-@keyframes moving-bot-to-top-slow {
-  0% {
-    transform: translateY(0%);
-  }
-
-  60% {
-    transform: translateY(50%);
-  }
-
-  100% {
-    transform: translateY(610%);
-  }
-}
-
 @keyframes moving-top-to-bot {
   0% {
     transform: translateY(0%);
   }
 
-  60% {
+  50% {
     transform: translateY(100%);
   }
 

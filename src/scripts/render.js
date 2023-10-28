@@ -1,4 +1,4 @@
-const imageLists = [
+const imageList = [
   "src/public/images/cafe.jpg",
   "src/public/images/quiet.jpg",
   "src/public/images/reflection.jpg",
@@ -19,23 +19,37 @@ function renderImageStack() {
   const container = document.createDocumentFragment();
 
   for (let i = 0; i < 5; i++) {
-    const imageStack = renderImageStackContainer(i);
+    const imageStack = renderImageStackContainer(
+      i,
+      i % 2 === 0 ? "bot-to-top" : "top-to-bot",
+    );
     container.appendChild(imageStack);
   }
 
   root.appendChild(container);
 }
 
-function renderImageStackContainer(index) {
+/**
+ *
+ * @param {number} index
+ * @param {string} direction bot-to-top | top-to-bot
+ * @returns
+ */
+function renderImageStackContainer(index, direction = "bot-to-top") {
   const container = document.createDocumentFragment();
 
   const div = document.createElement("div");
 
-  div.className = "absolute w-full h-full moving-bot-to-top";
+  if (direction === "bot-to-top") {
+    div.className = "absolute w-full h-full moving-bot-to-top";
+  } else {
+    div.className = "absolute w-full h-full moving-top-to-bot";
+  }
+
   div.style.left = `${STACK_START + index * STACK_STEP}%`;
 
   for (let i = 0; i < 6; i++) {
-    const image = renderImage(i);
+    const image = renderImage(i, direction);
     div.appendChild(image);
   }
 
@@ -43,15 +57,27 @@ function renderImageStackContainer(index) {
   return container;
 }
 
-function renderImage(index) {
+/**
+ *
+ * @param {number} index
+ * @param {string} direction bot-to-top | top-to-bot
+ * @returns
+ */
+function renderImage(index, direction = "bot-to-top") {
   const container = document.createDocumentFragment();
 
   const imageContainer = document.createElement("div");
   imageContainer.className = "absolute w-1/5 h-1/4";
-  imageContainer.style.bottom = `-${IMAGE_START + index * IMAGE_STEP}%`;
+
+  if (direction === "bot-to-top") {
+    imageContainer.style.bottom = `-${IMAGE_START + index * IMAGE_STEP}%`;
+  } else {
+    imageContainer.style.top = `-${IMAGE_START + index * IMAGE_STEP}%`;
+  }
 
   const image = document.createElement("img");
-  image.src = imageLists[index % imageLists.length];
+
+  image.src = imageList[index % imageList.length];
   image.alt = `Photo number ${index + 1}`;
   image.className = "w-full h-full object-cover";
 
